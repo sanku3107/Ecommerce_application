@@ -47,6 +47,10 @@ const schema = new mongoose.Schema(
       required: true,
       default: 0,
     },
+    total: {
+      type: Number,
+      required: true,
+    },
     status: {
       type: String,
       enum: ["Processing", "Shipped", "Delivered"],
